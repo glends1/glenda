@@ -1,0 +1,11 @@
+{
+    "name": "Random Dog Image",
+    "short_name": "Dog Image",
+    "description": "Get a random dog image with every click",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#f0f8ff",
+    "theme_color": "#ff6347"
+  }
+  
+  

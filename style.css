@@ -1,0 +1,33 @@
+/* Make the images responsive */
+#images img {
+    width: 100%; /* Ensure images take full width of their container */
+    border-radius: 8px;
+    margin-bottom: 15px;
+    object-fit: cover;
+    max-height: 300px; /* Set a max height for images to avoid overflow */
+  }
+  
+  /* Style adjustments for larger screens */
+  @media (min-width: 1024px) {
+    .columns.is-multiline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  
+    .columns.is-multiline .column {
+      flex: 1 1 30%; /* Allow up to 3 images in a row on larger screens */
+    }
+  }
+  
+  /* Mobile-first adjustments */
+  @media (max-width: 768px) {
+    .columns.is-multiline .column {
+      flex: 1 1 100%; /* Stack images on smaller screens */
+    }
+  
+    #breedInput {
+      width: 100%;
+    }
+  }
+  
